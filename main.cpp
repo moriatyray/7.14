@@ -72,7 +72,7 @@ public:
 	double Loss();//损失函数，输入为目标值
 	void forwardpropagation(double *input);//前向传播,输入为输入层节点的值
 	void backpropagation(double *T);//反向传播，输入为目标输出值
-	//void printresual(int trainingTimes);//打印信息
+
 };
 
 net::net()
@@ -166,16 +166,7 @@ void net::backpropagation(double *T)
 	}
 }
 
-// void net::printresual(int trainingTimes)
-// {
-// 	double loss = getLoss();
-// 	cout << "训练次数：" << trainingTimes << endl;
-// 	cout << "loss：" << loss << endl;
-// 	for (size_t oNNum = 0; oNNum < OPNNUM; oNNum++)
-// 	{
-// 		cout << "输出" << oNNum + 1 << "：" << O[oNNum] << endl;
-// 	}
-// }
+
 
 /////////////////////////////////////////////图像获取/////////////////////////////////
 
